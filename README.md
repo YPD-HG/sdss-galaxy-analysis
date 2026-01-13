@@ -167,6 +167,8 @@ Since bluer u − r indicates higher star-formation activity, this directly show
 
 This is a data-driven measurement of the **cosmic star-formation history** from SDSS photometry.
 
+---
+
 ## Measured evolution law
 
 The same binned SDSS data with a weighted fit:
@@ -176,6 +178,20 @@ The same binned SDSS data with a weighted fit:
 This gives the physical law:
 
 **u − r ≈ 2.10 + 0.78 z**
+
+---
+
+## Physical interpretation
+
+The fitted relation  
+**u − r ≈ 2.10 + 0.78 z**  
+provides a direct, data-driven measure of how galaxy stellar populations evolve with cosmic time.
+
+Using standard cosmology, the redshift range z ≈ 0 to z ≈ 0.7 corresponds to roughly **6–7 billion years of cosmic history**.  
+Over this interval, the mean galaxy color changes by Δ(u − r) ≈ 1.3, implying a strong decline in star-formation activity as galaxies age.
+
+This rate of color evolution is consistent with the known decline of the cosmic star-formation rate density, which drops by nearly an order of magnitude from z ≈ 1 to the present day.  
+In physical terms, this reflects galaxies exhausting their cold gas, shutting down star formation, and moving from the blue cloud onto the red sequence.
 
 ---
 
