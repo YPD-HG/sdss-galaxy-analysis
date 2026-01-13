@@ -20,6 +20,21 @@ All measurements come from real SDSS telescope observations.
 
 ---
 
+## Methods
+
+The SDSS catalog was first filtered to include only objects classified as **GALAXY**.  
+Rows with missing or non-physical values in magnitudes or redshift were removed to ensure reliable photometric and distance measurements.
+
+Galaxy colors were computed from the SDSS photometric bands using standard color indices (e.g., **u − r**, **u − g**, **g − r**).
+
+For population and evolution analysis, galaxies were grouped into **redshift bins** of fixed width to trace how average properties change with cosmic time.  
+Within each bin, the **mean u − r color** was calculated along with its **standard error**, providing an estimate of the uncertainty in the mean.
+
+To quantify color evolution, a **weighted linear regression** was performed on the binned data, using the inverse variance of each bin as weights.  
+This ensures that bins with better statistics have a stronger influence on the fitted relation, producing a physically meaningful estimate of the color–redshift evolution law.
+
+---
+
 ## What this project studies
 
 Using galaxy photometry and redshift, this project investigates:
