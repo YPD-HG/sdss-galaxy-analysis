@@ -40,6 +40,8 @@ This reproduces the core workflow of modern observational galaxy evolution studi
 A scatter plot of r-band magnitude versus redshift shows that more distant galaxies appear fainter.
 This is consistent with an expanding universe and the sensitivity limits of the SDSS telescope, confirming that the dataset behaves like a real cosmological survey.
 
+<img width="558" height="453" alt="Screenshot 2026-01-13 at 1 59 14 PM" src="https://github.com/user-attachments/assets/609b28d6-82b5-45ca-855b-4c6679b102a5" />
+
 ---
 
 ## Galaxy colors
