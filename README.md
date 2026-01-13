@@ -166,22 +166,19 @@ This gives the physical law:
 
 ## Connection to published astronomy
 
-The statistically significant decrease of u − r color with redshift measured in this project reflects well-known trends in galaxy evolution.
+The statistically significant trends measured in this project are consistent with multiple well-established results in the astronomical literature.
 
-Large SDSS based studies have shown that galaxy colors form two distinct populations (red and blue) with different star-formation activity. Baldry et al. (2004) demonstrated that the u − r color distribution in SDSS can be decomposed into a red sequence and a blue cloud, corresponding to passive and star-forming galaxies, respectively. :contentReference[oaicite:8]{index=8}
+**1. Bimodal color distributions in SDSS galaxies**  
+Baldry et al. (2004) used tens of thousands of SDSS galaxies to show that the galaxy color–magnitude distribution can be modeled as two distinct populations (red sequence and blue cloud) across a range of environments. This supports the interpretation of the two populations seen in this project. :contentReference[oaicite:0]{index=0}
 
-Other observational work combining SDSS with ultraviolet data (e.g., Schiminovich et al. 2007) shows that galaxies with bluer colors tend to be more actively forming stars and dominate at earlier cosmic times. :contentReference[oaicite:9]{index=9}
+**2. Redshift evolution of galaxy color and environment**  
+Studies using large spectroscopic samples such as the DEEP2 Galaxy Redshift Survey find that the fraction of red galaxies increases toward lower redshift (more recent times), and that color–density relations evolve across cosmic time. This aligns with your measured decrease in mean u − r color with increasing redshift. :contentReference[oaicite:1]{index=1}
 
-The decline of mean u − r color we find as redshift decreases is consistent with the broader trend of star formation quenching across cosmic time. This is part of the general framework of galaxy quenching, where galaxies transition from star-forming to passive as the universe ages. :contentReference[oaicite:10]{index=10}
+**3. Modeling the color evolution of galaxies**  
+Work by Maraston et al. (2008, 2009) on modeling the color evolution of luminous red galaxies in the SDSS shows how observed colors (e.g., g − r) change with redshift and can be matched by population synthesis models. This connects to quantitative color evolution and underlying stellar population changes measured in your project. :contentReference[oaicite:2]{index=2}
 
-Our results also connect with classic studies of galaxy evolution in dense environments, such as the Butcher–Oemler effect, which finds higher fractions of blue galaxies at intermediate redshifts compared to the local universe. :contentReference[oaicite:11]{index=11}
-
-In addition, the global cosmic star-formation history compiled by Madau & Dickinson (2014) shows that the overall star-formation rate density of the universe peaks at intermediate redshift and declines toward the present day, which is consistent with the systematic reddening of galaxy colors seen in this project. :contentReference[oaicite:12]{index=12}
-
-Reference examples:
-- Baldry, I. K. et al. (2004) *Color bimodality: Implications for galaxy evolution*  
-- Schiminovich, D. et al. (2007) *UV-optical color–magnitude analysis of SDSS galaxies*  
-- Madau, P. & Dickinson, M. (2014) *Cosmic Star-Formation History*
+**4. Cosmic star-formation history**  
+The decline of cosmic star formation with time, which you infer from the changing mean u − r color, matches the broader picture compiled observationally by Madau & Dickinson (2014), showing that the global star-formation rate density peaked at intermediate redshifts and declines toward the present. :contentReference[oaicite:3]{index=3}
 
 ---
 
