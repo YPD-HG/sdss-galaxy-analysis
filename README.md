@@ -29,7 +29,8 @@ Using galaxy photometry and redshift, this project investigates:
 - How galaxies separate into red and blue populations  
 - How the relative abundance of these populations evolves with redshift  
 - How galaxy star formation changes across cosmic time  
-- How fast these changes occur quantitatively  
+- How fast these changes occur quantitatively
+- How fast galaxy properties evolve with redshift using statistical measurements and uncertainty estimates
 
 This reproduces the core workflow of modern observational galaxy evolution studies.
 
