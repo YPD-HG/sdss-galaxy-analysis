@@ -131,17 +131,19 @@ This demonstrates that red and blue galaxies follow different evolutionary paths
 
 ## Statistical measurement of galaxy evolution
 
-Galaxies were grouped into redshift bins and the mean u − r color was computed in each bin along with its statistical uncertainty.
+Galaxies were grouped into redshift bins and the **mean u − r color** was computed in each bin along with its **statistical uncertainty**.
 
 This allows us to move beyond visual trends and quantitatively measure how galaxy star formation changes with cosmic time.
 
-Each point in the plot below represents the average galaxy color in a redshift slice, and the error bars show the uncertainty in that average.
+Each point in the plot below represents the **average galaxy color** in a redshift slice, and the error bars show the **uncertainty in that average**.
+
+<img width="574" height="448" alt="Screenshot 2026-01-13 at 2 45 18 PM" src="https://github.com/user-attachments/assets/6cc2d182-1090-4619-a501-6b52f47b59f7" />
 
 The measured values show:
 
-At low redshift (z ≈ 0), mean u − r ≈ 2.2
+- At low redshift (z ≈ 0), mean u − r ≈ 2.2
 
-At high redshift (z ≈ 0.7), mean u − r ≈ 0.9
+- At high redshift (z ≈ 0.7), mean u − r ≈ 0.9
 
 This is a large, systematic shift.
 Because the error bars do not overlap, the trend is statistically significant.
