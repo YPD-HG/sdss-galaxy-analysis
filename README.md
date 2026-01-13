@@ -1,8 +1,8 @@
 # Galaxy Properties and Population Evolution from SDSS
 
-This project analyzes real observational data from the Sloan Digital Sky Survey (SDSS) to study how galaxies differ in brightness, color, distance, and star formation activity, and how galaxy populations evolve across cosmic time.
+This project analyzes real observational data from the Sloan Digital Sky Survey (SDSS) to study how galaxies differ in brightness, color, distance, and star-formation activity, and how galaxy populations evolve across cosmic time.
 
-The goal is to treat SDSS as a physical survey of the universe and extract real astrophysical trends using data driven analysis.
+The goal is to treat SDSS as a physical survey of the universe and extract real astrophysical trends using data-driven and statistical analysis.
 
 ---
 
@@ -28,11 +28,10 @@ Using galaxy photometry and redshift, this project investigates:
 - How galaxy colors trace stellar populations  
 - How galaxies separate into red and blue populations  
 - How the relative abundance of these populations evolves with redshift  
-- How galaxy star formation changes across cosmic time  
-- How fast these changes occur quantitatively
-- How fast galaxy properties evolve with redshift using statistical measurements and uncertainty estimates
+- How galaxy star-formation activity changes across cosmic time  
+- How fast galaxy properties evolve with redshift using statistical measurements and uncertainty estimates  
 
-This reproduces the core workflow of modern observational galaxy evolution studies.
+This reproduces the core workflow of modern observational galaxy-evolution studies.
 
 ---
 
@@ -54,7 +53,7 @@ Galaxy colors were computed using standard SDSS indices:
 - **g − r**
 
 The color–color diagram (u − g vs g − r) reveals a tight galaxy sequence rather than random scatter.  
-This reflects differences in stellar age, dust content, and star formation activity across galaxies.
+This reflects differences in stellar age, dust content, and star-formation activity across galaxies.
 
 ---
 
@@ -110,7 +109,7 @@ Two key results were found:
 - The two galaxy populations have significantly different u − r values, confirming that one group is actively forming stars while the other is passive.  
 - The mean u − r color decreases with increasing redshift, showing that galaxies were bluer and more star-forming in the past.
 
-This reproduces the observed decline of cosmic star formation with time.
+This reproduces the observed decline of cosmic star formation over time.
 
 ---
 
@@ -120,7 +119,7 @@ A linear regression was fitted to **u − r vs redshift** to measure how galaxy 
 
 <img width="368" height="49" alt="Screenshot 2026-01-13 at 1 33 56 PM" src="https://github.com/user-attachments/assets/c2636516-33c3-4f63-8e65-ece318653101" />
 
-The fitted slope shows that galaxy color changes systematically with redshift, providing a direct numerical measure of stellar population evolution.
+The fitted slope shows that galaxy color changes systematically with redshift, providing a direct numerical measure of stellar-population evolution.
 
 When fitted separately for the two galaxy populations:
 - One population shows slow color evolution  
@@ -141,17 +140,30 @@ Each point in the plot below represents the **average galaxy color** in a redshi
 <img width="574" height="448" alt="Screenshot 2026-01-13 at 2 45 18 PM" src="https://github.com/user-attachments/assets/6cc2d182-1090-4619-a501-6b52f47b59f7" />
 
 The measured values show:
+- At low redshift (z ≈ 0), mean u − r ≈ **2.2**  
+- At high redshift (z ≈ 0.7), mean u − r ≈ **0.9**
 
-- At low redshift (z ≈ 0), mean u − r ≈ 2.2
+This is a large, systematic shift.  
+Because the error bars do not overlap, the trend is **statistically significant**.
 
-- At high redshift (z ≈ 0.7), mean u − r ≈ 0.9
+Since bluer u − r indicates higher star-formation activity, this directly shows that galaxies in the past were forming stars much more rapidly than galaxies today.
 
-This is a large, systematic shift.
-Because the error bars do not overlap, the trend is statistically significant.
+This is a data-driven measurement of the **cosmic star-formation history** from SDSS photometry.
 
-Since bluer u − r means more active star formation, this directly shows that galaxies in the past were forming stars much more rapidly than galaxies today.
+---
 
-This is a direct data driven measurement of cosmic star formation history from SDSS photometry.
+## Connection to published astronomy
+
+The statistically significant decrease of u − r color with redshift measured in this project reflects the well known decline of cosmic star formation over time.
+
+Large SDSS based studies and reviews have shown that the global star formation rate density of the universe was much higher in the past and has steadily declined toward the present day.
+
+In particular, Madau & Dickinson (2014) show that cosmic star formation peaked at intermediate redshift and decreases toward low redshift, which is consistent with the trend observed here where galaxies become redder and less star forming with time.
+
+Reference:
+Madau, P. & Dickinson, M. (2014), “Cosmic Star-Formation History”, Annual Review of Astronomy and Astrophysics.
+
+---
 
 ## Conclusions
 
@@ -160,18 +172,17 @@ From real SDSS data, this project shows that:
 - Distant galaxies appear fainter, consistent with cosmological expansion  
 - Galaxies separate into red and blue populations  
 - The relative fractions of these populations change with redshift  
-- The average galaxy color (u − r) decreases systematically with increasing redshift implying that galaxies were more actively forming stars in the early universe  
+- The average galaxy color (u − r) decreases systematically with increasing redshift  
+- The mean u − r drops from about **2.2 at z ≈ 0** to about **0.9 at z ≈ 0.7**  
+- This change is **statistically significant**, with non-overlapping uncertainties  
 - Red and blue galaxies evolve at different rates  
-- The mean u − r drops from about 2.2 at z ≈ 0 to about 0.9 at z ≈ 0.7  
-- This change is *statistically significant*, with non-overlapping uncertainties  
 - Galaxies were therefore forming stars much more actively in the past  
 
-These results are consistent with the modern picture of galaxy evolution.
-
+Together, these measurements reproduce the key observational result that the universe has transitioned from a blue, star forming phase to a red, passive phase over cosmic time.
 ---
 
 ## Why this matters
 
-All results are based on real SDSS telescope observations and standard analysis techniques used in observational cosmology.
+All results are based on real SDSS telescope observations and standard statistical techniques used in observational cosmology.
 
-This project demonstrates how large sky surveys can be used to extract physical information about galaxy populations and the history of star formation in the universe using data driven methods.
+This project demonstrates how large sky surveys can be used to extract physical information about galaxy populations and the history of star formation in the universe using data-driven methods.
