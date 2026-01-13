@@ -129,6 +129,27 @@ This demonstrates that red and blue galaxies follow different evolutionary paths
 
 ---
 
+## Statistical measurement of galaxy evolution
+
+Galaxies were grouped into redshift bins and the mean u − r color was computed in each bin along with its statistical uncertainty.
+
+This allows us to move beyond visual trends and quantitatively measure how galaxy star formation changes with cosmic time.
+
+Each point in the plot below represents the average galaxy color in a redshift slice, and the error bars show the uncertainty in that average.
+
+The measured values show:
+
+At low redshift (z ≈ 0), mean u − r ≈ 2.2
+
+At high redshift (z ≈ 0.7), mean u − r ≈ 0.9
+
+This is a large, systematic shift.
+Because the error bars do not overlap, the trend is statistically significant.
+
+Since bluer u − r means more active star formation, this directly shows that galaxies in the past were forming stars much more rapidly than galaxies today.
+
+This is a direct data driven measurement of cosmic star formation history from SDSS photometry.
+
 ## Conclusions
 
 From real SDSS data, this project shows that:
@@ -136,8 +157,11 @@ From real SDSS data, this project shows that:
 - Distant galaxies appear fainter, consistent with cosmological expansion  
 - Galaxies separate into red and blue populations  
 - The relative fractions of these populations change with redshift  
-- Galaxies were more actively forming stars in the early universe  
+- The average galaxy color (u − r) decreases systematically with increasing redshift implying that galaxies were more actively forming stars in the early universe  
 - Red and blue galaxies evolve at different rates  
+- The mean u − r drops from about 2.2 at z ≈ 0 to about 0.9 at z ≈ 0.7  
+- This change is *statistically significant*, with non-overlapping uncertainties  
+- Galaxies were therefore forming stars much more actively in the past  
 
 These results are consistent with the modern picture of galaxy evolution.
 
