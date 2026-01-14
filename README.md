@@ -49,6 +49,7 @@ Using galaxy photometry and redshift, this project investigates:
 - How to quantify galaxy evolution using binned averages, uncertainties, and weighted regression  
 - How observational selection effects bias galaxy-evolution measurements  
 - How a volume-limited sample recovers the true physical evolution of galaxies
+- How blue galaxies evolve and how red galaxies evolve separately inside the volume limited sample
 
 This reproduces the core workflow of modern observational galaxy-evolution studies.
 
@@ -208,6 +209,38 @@ Repeating the binned color analysis and weighted regression using the volume-lim
 This relation shows that galaxy colors become significantly bluer with increasing redshift, even after removing all observational selection effects. Since bluer u − r indicates higher star-formation activity, this indicates that galaxies in the past were forming stars more rapidly than galaxies today.
 
 This bias-corrected evolution law approximates the intrinsic cosmic evolution of galaxy stellar populations, rather than a trend dominated by telescope sensitivity.
+
+---
+
+## Population-resolved evolution in the volume-limited sample
+
+To test whether different types of galaxies evolve in the same way, the volume-limited SDSS sample was split into two physically distinct populations using a standard **u − r color cut**:
+
+- **Blue galaxies**: actively star-forming systems  
+- **Red galaxies**: passively evolving systems  
+
+The evolution of each population was then measured separately in the **volume-limited catalog**, ensuring that all observational selection effects were removed.
+
+<img width="421" height="108" alt="Screenshot 2026-01-14 at 2 10 17 PM" src="https://github.com/user-attachments/assets/0a09cee8-6115-43ab-a064-cec95e3e3527" />
+
+
+For **blue galaxies**, the mean color evolves strongly with redshift:
+
+- At low redshift (z ≈ 0.03): **u − r ≈ 1.65**  
+- At higher redshift (z ≈ 0.30): **u − r ≈ 1.93**
+
+<img width="394" height="104" alt="Screenshot 2026-01-14 at 2 10 45 PM" src="https://github.com/user-attachments/assets/c34e17fb-68cd-4f45-aa7b-ee481bfbbc2d" />
+
+This indicates that blue galaxies become significantly redder with time, reflecting a strong decline in star-formation activity as their stellar populations age.
+
+For **red galaxies**, the mean color evolves much more weakly:
+
+- Across the same redshift range, **u − r ≈ 2.6–2.7**
+
+This shows that red galaxies are already dominated by old stellar populations and exhibit only mild color evolution over cosmic time.
+
+This population-resolved, volume-limited analysis demonstrates that **galaxy evolution is not uniform**:  
+actively star-forming galaxies fade and redden rapidly, while passive galaxies evolve much more slowly. This behavior matches the standard picture of galaxies migrating from the blue cloud onto the red sequence as star formation shuts down.
 
 ---
 
