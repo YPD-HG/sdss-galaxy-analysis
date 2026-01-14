@@ -277,58 +277,58 @@ Physically, this implies that galaxy evolution over this redshift range is domin
 
 ## Connection to published astronomy
 
-The statistically significant trends measured in this project closely match well-established results from large galaxy surveys and modern galaxy-evolution theory.
+The trends measured in this project are consistent with well established results from large galaxy surveys and modern galaxy evolution studies.
 
 **1. Bimodal galaxy populations in SDSS**  
-Baldry et al. (2004) showed that SDSS galaxies form two distinct populations in u − r color space, corresponding to a blue, star-forming population and a red, passive population. This directly supports the red-sequence and blue-cloud separation recovered in this project from SDSS color–magnitude diagrams.  
+Baldry et al. (2004) showed that SDSS galaxies form two distinct populations in u − r color space, corresponding to a blue, star-forming population and a red, passive population. The red sequence and blue cloud recovered in this project from SDSS color–magnitude diagrams are consistent with this established bimodality.  
 https://arxiv.org/abs/astro-ph/0410603
 
 **2. Evolution of red and blue galaxy fractions**  
-Martínez et al. (2006) used SDSS group catalogs to show that the fraction of red galaxies increases toward lower redshift, demonstrating that galaxy populations evolve with cosmic time. This matches the population-fraction trends measured here, where one population becomes dominant as redshift decreases.  
+Martínez et al. (2006) used SDSS group catalogs to show that the fraction of red galaxies increases toward lower redshift, demonstrating that galaxy populations evolve with cosmic time. This agrees with the population fraction trends measured here, where one population becomes increasingly dominant as redshift decreases.  
 https://arxiv.org/abs/astro-ph/0607273
 
 **3. Quantitative evolution of galaxy colors**  
-Maraston et al. (2009) modeled the redshift evolution of SDSS galaxy colors using stellar-population synthesis and showed that observed color changes with redshift trace aging stellar populations and declining star formation. This provides a physical interpretation for the observed SDSS color evolution measured in this project, including both the raw color–redshift trend (**u − r ≈ 2.10 + 0.78 z**) and the bias-corrected evolution derived from the volume-limited sample (**u − r ≈ 2.72 − 3.11 z**).  
+Maraston et al. (2009) modeled the redshift evolution of SDSS galaxy colors using stellar population synthesis and showed that observed color changes with redshift trace aging stellar populations and declining star formation. This provides a physical framework for interpreting the SDSS color–redshift trends measured in this project, including both the raw relation (**u − r ≈ 2.10 + 0.78 z**) and the bias corrected relation derived from the volume limited sample (**u − r ≈ 2.72 − 3.11 z**).  
 https://academic.oup.com/mnrasl/article/394/1/L107/1081702
 
 **4. Cosmic star-formation history**  
-The decline of mean u − r color with decreasing redshift found here is consistent with the global cosmic star-formation history compiled by Madau & Dickinson (2014), which shows that the star-formation rate density of the universe peaked at intermediate redshift and declined toward the present day.  
+The decrease of mean u − r color toward lower redshift found here is consistent with the global cosmic star-formation history compiled by Madau and Dickinson (2014), which shows that the star-formation rate density of the universe peaked at intermediate redshift and declined toward the present day.  
 https://arxiv.org/abs/1403.0007
 
 ---
 
 ## Conclusions
 
-From real SDSS data, this project shows that:
+Using real SDSS galaxy data, this project finds that:
 
 - Distant galaxies appear fainter with increasing redshift, consistent with cosmological expansion and survey sensitivity limits  
-- Galaxies separate into two physically distinct populations in color–magnitude space: a blue, star-forming population and a red, passively evolving population  
-- These populations reproduce the classical **blue cloud** and **red sequence** seen in professional extragalactic surveys  
-- The relative fractions of red and blue galaxies change systematically with redshift, demonstrating that the mix of galaxy types evolves over cosmic time  
-- Galaxy colors (u − r) act as a reliable tracer of stellar populations and star-formation activity across the sample  
-- In the full flux-limited SDSS catalog, the average galaxy color becomes bluer at higher redshift, showing that galaxies in the past were forming stars more actively  
-- Binned measurements show that the mean u − r decreases from about **2.2 at z ≈ 0** to about **0.9 at z ≈ 0.7**, a change that is statistically significant  
-- A weighted regression of the flux-limited sample yields  
+- Galaxies separate into two distinct populations in color–magnitude space: a blue, star-forming population and a red, passively evolving population  
+- These populations correspond to the classical **blue cloud** and **red sequence** seen in large extragalactic surveys  
+- The relative fractions of red and blue galaxies change systematically with redshift, indicating that the mix of galaxy types evolves over cosmic time  
+- Galaxy colors (u − r) provide a useful tracer of stellar populations and star formation activity across the sample  
+- In the flux limited SDSS catalog, the average galaxy color becomes bluer at higher redshift, indicating higher star formation activity in the past  
+- Binned measurements show that the mean u − r decreases from about **2.2 at z ≈ 0** to about **0.9 at z ≈ 0.7**, a statistically significant change  
+- A weighted regression of the flux limited sample yields  
   **u − r ≈ 2.10 + 0.78 z**,  
-  reflecting the observed color evolution in the raw SDSS survey  
+  describing the observed color evolution in the raw SDSS catalog  
 
-After correcting for SDSS selection effects using a **volume-limited galaxy sample**, the global color–redshift relation becomes
+After correcting for SDSS selection effects using a **volume limited galaxy sample**, the global color–redshift relation becomes
 
 **u − r ≈ 2.72 − 3.11 z**
 
-However, bootstrap uncertainty analysis shows that this strong slope does **not** represent galaxies changing color rapidly. Instead, it arises from a changing **mixture of populations**:
+Bootstrap uncertainty analysis shows that this strong global slope does not arise from galaxies rapidly changing color within each population. Instead, it reflects a changing **mixture of galaxy populations**:
 
 - At higher redshift, blue star-forming galaxies are more common  
 - At lower redshift, red passive galaxies become more dominant  
 
-When blue and red galaxies are analyzed **separately** in the volume-limited sample, their color–redshift slopes are consistent with zero within uncertainty:
+When blue and red galaxies are analyzed separately in the volume limited sample, their color–redshift slopes are consistent with zero within uncertainty:
 
 - Blue galaxies: **b ≈ 1.83 ± 2.44**  
 - Red galaxies: **b ≈ 1.08 ± 3.74**
 
-This means that over z ≤ 0.3, individual galaxies within each population do **not** show statistically significant color evolution. The apparent evolution in the combined sample is driven mainly by galaxies moving between populations, not by rapid aging within a population.
+This indicates that over z ≤ 0.3, individual galaxies within each population do not show statistically significant color evolution. The apparent evolution in the combined sample is driven mainly by galaxies moving between populations rather than by strong color changes within a population.
 
-Together, these results show that galaxy evolution in SDSS is dominated by **population transformation**: galaxies migrate from the blue, star-forming cloud to the red, passive sequence as star formation shuts down. Correcting for observational bias reveals that this demographic shift, rather than uniform color aging, is the primary driver of the observed cosmic color evolution.
+Taken together, these results indicate that galaxy evolution in SDSS over this redshift range is dominated by **population transformation**, with galaxies transitioning from the blue, star-forming population to the red, passive population as star formation shuts down.
 
 ---
 
