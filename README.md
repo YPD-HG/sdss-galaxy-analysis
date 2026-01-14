@@ -191,13 +191,13 @@ The SDSS survey is **flux-limited**, meaning it only detects bright galaxies at 
 
 To remove this bias, absolute magnitudes were computed and a **volume-limited galaxy sample** was constructed, keeping only galaxies that would be observable across the full redshift range of the survey. This ensures that the same intrinsic galaxy population is compared at all cosmic epochs.
 
+<img width="270" height="48" alt="Screenshot 2026-01-14 at 1 12 48 PM" src="https://github.com/user-attachments/assets/0c3751f7-5c77-42af-8f97-d2cf0793f732" />
+
 This correction is standard practice in observational cosmology and is required to measure physically meaningful galaxy-evolution trends.
 
 ---
 
 ## Bias-corrected galaxy evolution
-
-<img width="270" height="48" alt="Screenshot 2026-01-14 at 1 12 48 PM" src="https://github.com/user-attachments/assets/0c3751f7-5c77-42af-8f97-d2cf0793f732" />
 
 Repeating the binned color analysis and weighted regression using the volume-limited sample yields a new, physically meaningful evolution law:
 
