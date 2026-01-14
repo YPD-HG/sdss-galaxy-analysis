@@ -14,19 +14,6 @@ Mean u−r vs redshift for raw SDSS, volume-limited sample, and blue and red gal
 
 This figure shows that the strong color evolution seen in raw SDSS is largely removed in the volume-limited sample, and that blue and red galaxies individually have nearly constant colors. The apparent global evolution arises mainly from the changing mixture of blue and red galaxies with redshift.
 
-## Population-resolved evolution in the volume-limited sample
-
-To test whether different types of galaxies evolve in the same way, the volume-limited SDSS sample was split into two physically distinct populations using a standard **u − r color cut**:
-
-- **Blue galaxies**: actively star-forming systems  
-- **Red galaxies**: passively evolving systems  
-
-The evolution of each population was then measured separately in the **volume-limited catalog**, ensuring that all observational selection effects were removed.
-
-Bootstrap resampling was used to estimate the uncertainty on the color–redshift slope for each population.
-
----
-
 ## Dataset
 
 The dataset contains 10,000 astronomical objects observed by the Sloan telescope.  
@@ -244,6 +231,17 @@ This relation shows that the mean color of the volume limited galaxy population 
 This bias-corrected evolution law approximates the intrinsic cosmic evolution of galaxy stellar populations, rather than a trend dominated by telescope sensitivity.
 
 ---
+
+## Population-resolved evolution in the volume-limited sample
+
+To test whether different types of galaxies evolve in the same way, the volume-limited SDSS sample was split into two physically distinct populations using a standard **u − r color cut**:
+
+- **Blue galaxies**: actively star-forming systems  
+- **Red galaxies**: passively evolving systems  
+
+The evolution of each population was then measured separately in the **volume-limited catalog**, ensuring that all observational selection effects were removed.
+
+Bootstrap resampling was used to estimate the uncertainty on the color–redshift slope for each population.
 
 ### Blue galaxies
 
