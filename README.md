@@ -210,6 +210,14 @@ This bias-corrected evolution law approximates the intrinsic cosmic evolution of
 
 ---
 
+## The full picture: population-resolved color evolution
+
+Mean u−r vs redshift for raw SDSS, volume-limited sample, and blue and red galaxies separately.
+
+<img width="610" height="463" alt="Screenshot 2026-01-14 at 4 37 39 PM" src="https://github.com/user-attachments/assets/ae9441d4-6a53-43f6-9e24-b22f15f41a72" />
+
+This figure shows that the strong color evolution seen in raw SDSS is largely removed in the volume-limited sample, and that blue and red galaxies individually have nearly constant colors. The apparent global evolution arises mainly from the changing mixture of blue and red galaxies with redshift.
+
 ## Population-resolved evolution in the volume-limited sample
 
 To test whether different types of galaxies evolve in the same way, the volume-limited SDSS sample was split into two physically distinct populations using a standard **u − r color cut**:
