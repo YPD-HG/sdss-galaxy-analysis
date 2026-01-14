@@ -1,19 +1,14 @@
+# cosmic history engine
+
 import pandas as pd
-import numpy as np
 
-def add_redshift_bins(df):
-    """
-    Bin galaxies in redshift.
-    """
-    df = df.copy()
+def add_redshift_bins(gal):
     bins = [0, 0.05, 0.1, 0.2, 0.4, 1.0]
-    df["z_bin"] = pd.cut(df["redshift"], bins=bins)
-    return df
+    gal["z_bin"] = pd.cut(gal["redshift"], bins)
+    return gal
 
-def color_statistics(df):
-    """
-    Compute mean u-r color and uncertainties in each redshift bin.
-    """
-    stats = df.groupby("z_bin")["u_r"].agg(["mean", "std", "count"])
-    stats["stderr"] = stats["std"] / np.sqrt(stats["count"])
+def color_statistics(gal):
+    stats = gal.groupby("z_bin")["u_r"].agg(["mean", "std", "count"])
+    stats["stderr"] = stats["std"] / (stats["count"] ** 0.5)
     return stats
+

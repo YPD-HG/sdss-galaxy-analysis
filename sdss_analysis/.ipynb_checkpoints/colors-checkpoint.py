@@ -1,9 +1,9 @@
-def add_colors(df):
-    """
-    Compute SDSS color indices.
-    """
-    df = df.copy()
-    df["u_g"] = df["u"] - df["g"]
-    df["g_r"] = df["g"] - df["r"]
-    df["u_r"] = df["u"] - df["r"]
-    return df
+# photometry module
+def add_colors(gal):
+    gal = gal.copy()
+
+    gal["u_g"] = gal["u"] - gal["g"]
+    gal["g_r"] = gal["g"] - gal["r"]
+    gal["u_r"] = gal["u"] - gal["r"]
+
+    return gal

@@ -1,9 +1,11 @@
-import numpy as np
+# galaxy classifier 
+from sklearn.cluster import KMeans
 
-def assign_populations(df, threshold=2.2):
-    """
-    Separate galaxies into red and blue populations using u-r color.
-    """
-    df = df.copy()
-    df["population"] = np.where(df["u_r"] > threshold, "red", "blue")
-    return df
+def assign_populations(gal, n_clusters=2):
+    X = gal[["g_r", "r"]].values
+
+    kmeans = KMeans(n_clusters=n_clusters, random_state=0)
+    gal["pop"] = kmeans.fit_predict(X)
+
+    return gal
+

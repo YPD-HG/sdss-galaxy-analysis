@@ -8,3 +8,4 @@ def assign_populations(gal, n_clusters=2):
     gal["pop"] = kmeans.fit_predict(X)
 
     return gal
+

@@ -1,15 +1,17 @@
 import pandas as pd
 
-def load_galaxies(path="data/sdss.csv"):
-    """
-    Load SDSS galaxy data and apply basic cleaning.
-    """
+def load_galaxies(path="data/Skyserver_SQL2_27_2018 6_51_39 PM.csv"):
     df = pd.read_csv(path)
 
     # Keep only galaxies
-    df = df[df["class"] == "GALAXY"].copy()
+    gal = df[df["class"] == "GALAXY"].copy()
 
-    # Remove missing values
-    df = df.dropna(subset=["u", "g", "r", "i", "z", "redshift"])
+    # Convert columns to numeric
+    cols = ["u", "g", "r", "i", "z", "redshift"]
+    for c in cols:
+        gal[c] = pd.to_numeric(gal[c], errors="coerce")
 
-    return df
+    # Drop bad rows
+    gal = gal.dropna(subset=cols)
+
+    return gal

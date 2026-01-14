@@ -11,3 +11,4 @@ def color_statistics(gal):
     stats = gal.groupby("z_bin")["u_r"].agg(["mean", "std", "count"])
     stats["stderr"] = stats["std"] / (stats["count"] ** 0.5)
     return stats
+
