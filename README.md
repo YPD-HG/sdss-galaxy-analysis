@@ -255,7 +255,7 @@ Instead, it arises primarily from a changing **mixture of populations** with red
 
 This population mixing produces the apparent global color evolution seen in the flux-limited SDSS catalog.
 
-Once selection bias is removed and populations are separated, both blue and red galaxies are approximately stable in color over z ≤ 0.3, consistent with standard models of galaxy evolution.
+After correcting for selection bias and separating the populations, no statistically significant color evolution is detected for either blue or red galaxies over z ≤ 0.3, in agreement with standard models of galaxy evolution.
 
 ---
 
