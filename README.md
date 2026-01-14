@@ -170,6 +170,20 @@ This provides a data-driven estimate of the cosmic star-formation history from S
 
 ---
 
+## Figure: Mean u − r versus redshift for the SDSS galaxy sample
+
+Average galaxy color becomes steadily bluer with increasing redshift, showing that galaxies formed stars more actively in the past.
+
+<img width="611" height="469" alt="Screenshot 2026-01-14 at 4 59 56 PM" src="https://github.com/user-attachments/assets/3e4c7ca2-2924-434b-a5a8-855148cd8284" />
+
+Each point represents the mean u − r color of thousands of galaxies inside a redshift bin, with error bars showing the statistical uncertainty of that mean. Unlike scatter plots, this figure isolates the population-level trend and removes noise from individual galaxies.
+
+The strong downward trend demonstrates a real, statistically significant evolution of galaxy color with cosmic time. Galaxies at higher redshift are bluer, meaning their stellar populations were younger and their star-formation rates higher.
+
+The blue-galaxy curve is not visually distinct in this plot because blue galaxies dominate the sample at high redshift and overlap closely with the global mean. In other words, the blue population largely is the SDSS sample at early cosmic times, so its mean lies on top of the total-sample curve.
+
+This figure establishes that galaxy color evolution is real and measurable.
+
 ## Measured evolution law (raw SDSS)
 
 The binned SDSS data with a weighted fit:
