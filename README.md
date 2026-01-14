@@ -1,4 +1,4 @@
-# Galaxy Properties and Population Evolution from SDSS
+# Galaxy Population Evolution from the Sloan Digital Sky Survey
 
 This project analyzes real observational data from the Sloan Digital Sky Survey (SDSS) to study how galaxies differ in brightness, color, distance, and star-formation activity, and how galaxy populations evolve across cosmic time.
 
@@ -44,9 +44,11 @@ Using galaxy photometry and redshift, this project investigates:
 - How galaxies separate into red and blue populations  
 - How the relative abundance of these populations evolves with redshift  
 - How galaxy star-formation activity changes across cosmic time  
-- How fast galaxy properties evolve with redshift using statistical measurements and uncertainty estimates
-- How fast galaxy color (and therefore star formation) changes with cosmic time.
-- How to quantify galaxy evolution using binned averages, uncertainties, and weighted regression 
+- How fast galaxy properties evolve with redshift using statistical measurements and uncertainty estimates  
+- How fast galaxy color (and therefore star formation) changes with cosmic time  
+- How to quantify galaxy evolution using binned averages, uncertainties, and weighted regression  
+- How observational selection effects bias galaxy-evolution measurements  
+- How a volume-limited sample recovers the true physical evolution of galaxies
 
 This reproduces the core workflow of modern observational galaxy-evolution studies.
 
@@ -169,35 +171,67 @@ This is a data-driven measurement of the **cosmic star-formation history** from 
 
 ---
 
-## Measured evolution law
+## Measured evolution law (raw SDSS)
 
-The same binned SDSS data with a weighted fit:
+The binned SDSS data with a weighted fit:
 
 <img width="573" height="451" alt="Screenshot 2026-01-13 at 4 29 52 PM" src="https://github.com/user-attachments/assets/04d5c7a5-8790-41eb-be88-43316f89a1e3" />
 
-This gives the physical law:
+This gives the observed color–redshift relation in the flux-limited SDSS sample:
 
 **u − r ≈ 2.10 + 0.78 z**
 
+Because SDSS is flux-limited, this relation is affected by selection bias and does not yet represent the true physical evolution of galaxies.
+
 ---
 
-## Physical interpretation
+## Selection effects and volume-limited correction
 
-The fitted relation  
+The SDSS survey is **flux-limited**, meaning it only detects bright galaxies at large distances, while faint galaxies drop out of the sample at higher redshift. This introduces a systematic bias: distant galaxy samples are artificially skewed toward intrinsically luminous and typically redder systems.
+
+To remove this bias, absolute magnitudes were computed and a **volume-limited galaxy sample** was constructed, keeping only galaxies that would be observable across the full redshift range of the survey. This ensures that the same intrinsic galaxy population is compared at all cosmic epochs.
+
+This correction is standard practice in observational cosmology and is required to measure physically meaningful galaxy-evolution trends.
+
+---
+
+## Bias-corrected galaxy evolution
+
+<img width="270" height="48" alt="Screenshot 2026-01-14 at 1 12 48 PM" src="https://github.com/user-attachments/assets/0c3751f7-5c77-42af-8f97-d2cf0793f732" />
+
+Repeating the binned color analysis and weighted regression using the volume-limited sample yields a new, physically meaningful evolution law:
+
+<img width="254" height="112" alt="Screenshot 2026-01-14 at 1 20 57 PM" src="https://github.com/user-attachments/assets/e1644d00-1609-4477-ae4c-15c742cc89e9" />
+
+**u − r ≈ 2.72 − 3.11 z**
+
+This relation shows that galaxy colors become significantly bluer with increasing redshift, even after removing all observational selection effects. Since bluer u − r corresponds to younger stellar populations and higher star-formation activity, this provides direct evidence that galaxies were forming stars much more rapidly in the past than they do today.
+
+This bias-corrected evolution law represents the true cosmic evolution of galaxy stellar populations, rather than a trend distorted by telescope sensitivity.
+
+---
+
+## Physical interpretation (bias corrected)
+
+The two fitted relations, the raw SDSS relation  
 **u − r ≈ 2.10 + 0.78 z**  
-provides a direct, data-driven measure of how galaxy stellar populations evolve with cosmic time.
+and the bias-corrected relation  
+**u − r ≈ 2.72 − 3.11 z**,  
+describe two different things. The raw relation reflects the observed trend in the flux-limited SDSS catalog, which is affected by telescope selection effects. The bias-corrected relation, derived from the volume-limited galaxy sample, represents the true physical evolution of galaxy stellar populations.
 
-Using standard cosmology, the redshift range z ≈ 0 to z ≈ 0.7 corresponds to roughly **6–7 billion years of cosmic history**.  
-Over this interval, the mean galaxy color changes by Δ(u − r) ≈ 1.3, implying a strong decline in star-formation activity as galaxies age.
+In the volume-limited data, the mean galaxy color changes from **u − r ≈ 2.53** at low redshift (z ≈ 0.03) to **u − r ≈ 1.46** at higher redshift (z ≈ 0.30). This is a shift of more than one full magnitude in u − r, showing that galaxies were substantially bluer in the past even after all observational bias has been removed.
 
-This rate of color evolution is consistent with the known decline of the cosmic star-formation rate density, which drops by nearly an order of magnitude from z ≈ 1 to the present day.  
-In physical terms, this reflects galaxies exhausting their cold gas, shutting down star formation, and moving from the blue cloud onto the red sequence.
+Using standard cosmology, the redshift range z ≈ 0 to z ≈ 0.3 corresponds to several billion years of cosmic history. Over this time, the strong decrease in u − r implies a major decline in star formation activity as galaxies age. Because u − r traces the balance between young, blue stars and older, red stars, this evolution reflects galaxies gradually exhausting their cold gas and shutting down star formation.
+
+The steep negative slope of the bias-corrected relation (**−3.11**) shows that this trend is not an artifact of telescope sensitivity but a real physical transformation of the galaxy population. In physical terms, galaxies evolve from blue, actively star-forming systems in the past toward red, passive systems in the present day, moving from the blue cloud onto the red sequence.
+
+This volume-limited result directly demonstrates that the decline of cosmic star formation is encoded in the colors of galaxies themselves, making the measured color–redshift relation a quantitative record of how galaxies have aged over cosmic time.
 
 ---
 
 ## Connection to published astronomy
 
-The statistically significant trends measured in this project closely match well-established results from large galaxy surveys.
+The statistically significant trends measured in this project closely match well-established results from large galaxy surveys and modern galaxy-evolution theory.
 
 **1. Bimodal galaxy populations in SDSS**  
 Baldry et al. (2004) showed that SDSS galaxies form two distinct populations in u − r color space, corresponding to a blue, star-forming population and a red, passive population. This directly supports the red-sequence and blue-cloud separation recovered in this project from SDSS color–magnitude diagrams.  
@@ -208,7 +242,7 @@ Martínez et al. (2006) used SDSS group catalogs to show that the fraction of re
 https://arxiv.org/abs/astro-ph/0607273
 
 **3. Quantitative evolution of galaxy colors**  
-Maraston et al. (2009) modeled the redshift evolution of SDSS galaxy colors using stellar-population synthesis and showed that observed color changes with redshift trace aging stellar populations and declining star formation. This provides a physical interpretation for the linear color-evolution law (**u − r ≈ 2.10 + 0.78 z**) measured in this project.  
+Maraston et al. (2009) modeled the redshift evolution of SDSS galaxy colors using stellar-population synthesis and showed that observed color changes with redshift trace aging stellar populations and declining star formation. This provides a physical interpretation for the observed SDSS color evolution measured in this project, including both the raw color–redshift trend (**u − r ≈ 2.10 + 0.78 z**) and the bias-corrected evolution derived from the volume-limited sample (**u − r ≈ 2.72 − 3.11 z**).  
 https://academic.oup.com/mnrasl/article/394/1/L107/1081702
 
 **4. Cosmic star-formation history**  
@@ -227,15 +261,17 @@ From real SDSS data, this project shows that:
 - The relative fractions of red and blue galaxies change systematically with redshift, demonstrating that the mix of galaxy types evolves over cosmic time  
 - Galaxy colors (u − r) act as a reliable tracer of stellar populations and star-formation activity across the sample  
 - The average galaxy color becomes bluer at higher redshift, showing that galaxies in the past were forming stars more actively  
-- The mean u − r decreases from about **2.2 at z ≈ 0** to about **0.9 at z ≈ 0.7**  
-- This change is **statistically significant**, with non-overlapping uncertainties in the binned averages  
-- A weighted regression yields the empirical evolution law  
+- The mean u − r decreases from about **2.2 at z ≈ 0** to about **0.9 at z ≈ 0.7**, a change that is statistically significant from the binned measurements  
+- A weighted regression of the full SDSS sample yields the empirical relation  
   **u − r ≈ 2.10 + 0.78 z**,  
-  providing a quantitative measurement of how galaxy stellar populations evolve with cosmic time  
-- Red and blue galaxies follow different evolutionary tracks, with blue galaxies showing much stronger color evolution than red galaxies
-- The measured color-redshift relation (u − r ≈ 2.10 + 0.78 z) is consistent with published observational trends showing systematic spectral evolution of galaxies as they age  
+  reflecting the observed color evolution in the flux-limited survey  
+- After correcting for SDSS selection effects using a volume-limited galaxy sample, the physically meaningful evolution law becomes  
+  **u − r ≈ 2.72 − 3.11 z**,  
+  showing that galaxies were substantially bluer and more star-forming in the past  
+- Red and blue galaxies follow different evolutionary tracks, with blue galaxies showing much stronger color evolution than red galaxies  
+- Both the raw and bias-corrected color–redshift relations are consistent with published observational evidence for systematic spectral evolution of galaxies as the universe ages  
 
-Together, these results show that the universe has transitioned from a blue, actively star-forming phase to a red, more passive phase as it has aged, reproducing the key observational picture of galaxy evolution seen in large professional surveys.
+Together, these results show that the universe has transitioned from a blue, actively star-forming phase to a red, more passive phase over the last several billion years, and that correcting for observational bias is essential to recover the true physical history of galaxy evolution.
 
 ---
 
@@ -245,9 +281,11 @@ All results in this project are based on real SDSS telescope observations and th
 
 By combining galaxy colors, redshifts, population statistics, and weighted regression, this project goes beyond visualization and makes **quantitative measurements of galaxy evolution**.
 
-In particular, measuring an explicit evolution law  
+In particular, measuring both the observed SDSS relation  
 **u − r ≈ 2.10 + 0.78 z**  
-demonstrates how large sky surveys can be used to recover the cosmic history of star formation directly from data.
+and the bias-corrected physical relation  
+**u − r ≈ 2.72 − 3.11 z**  
+demonstrates how large sky surveys can be used to recover the true cosmic history of star formation once observational selection effects are properly removed.
 
 This is the same type of analysis used in modern galaxy surveys to study how galaxies form, evolve, and eventually stop forming stars, making this project a small but authentic example of real extragalactic astronomy in practice.
 
