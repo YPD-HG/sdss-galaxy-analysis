@@ -204,7 +204,7 @@ Repeating the binned color analysis and weighted regression using the volume-lim
 
 **u − r ≈ 2.72 − 3.11 z**
 
-This relation shows that galaxy colors become significantly bluer with increasing redshift, even after removing all observational selection effects. Since bluer u − r indicates higher star-formation activity, this indicates that galaxies in the past were forming stars more rapidly than galaxies today.
+This relation shows that the mean color of the volume limited galaxy population becomes bluer with increasing redshift, even after removing all observational selection effects. Since bluer u − r indicates higher star-formation activity, this indicates that galaxies in the past were forming stars more rapidly than galaxies today.
 
 This bias-corrected evolution law approximates the intrinsic cosmic evolution of galaxy stellar populations, rather than a trend dominated by telescope sensitivity.
 
@@ -223,6 +223,8 @@ Bootstrap resampling was used to estimate the uncertainty on the color–redshif
 
 ### Blue galaxies
 
+<img width="280" height="79" alt="Screenshot 2026-01-14 at 3 01 48 PM" src="https://github.com/user-attachments/assets/e73a0543-49de-46e8-9b17-b513cd860eba" />
+
 The fitted color–redshift slope is:
 
 **b ≈ 1.83 ± 2.44**
@@ -232,6 +234,8 @@ This corresponds to a statistical significance of only **0.75σ**, meaning the s
 Within the redshift range probed (z ≤ 0.3), the average color of blue galaxies is therefore consistent with being approximately constant once selection effects are removed.
 
 ### Red galaxies
+
+<img width="288" height="77" alt="Screenshot 2026-01-14 at 3 04 46 PM" src="https://github.com/user-attachments/assets/ccee33fa-32b3-4eb3-929a-8bebac7ba7ca" />
 
 The fitted color–redshift slope is:
 
