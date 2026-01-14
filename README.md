@@ -259,21 +259,19 @@ Once selection bias is removed and populations are separated, both blue and red 
 
 ---
 
-## Physical interpretation (bias corrected)
+## Physical interpretation
 
 The two fitted relations, the raw SDSS relation  
-**u − r ≈ 2.10 + 0.78 z**  
+u − r ≈ 2.10 + 0.78 z  
 and the bias-corrected relation  
-**u − r ≈ 2.72 − 3.11 z**,  
-describe two different things. The raw relation reflects the observed trend in the flux-limited SDSS catalog, which is affected by telescope selection effects. The bias-corrected relation, derived from the volume-limited galaxy sample, approximates the physical evolution of galaxy stellar populations.
+u − r ≈ 2.72 − 3.11 z  
+describe two different things. The raw relation reflects the observed trend in the flux-limited SDSS catalog, which is affected by telescope selection effects. The bias-corrected relation is obtained from the volume-limited sample and removes this observational bias.
 
-In the volume-limited data, the mean galaxy color changes from **u − r ≈ 2.53** at low redshift (z ≈ 0.03) to **u − r ≈ 1.46** at higher redshift (z ≈ 0.30). This is a shift of more than one full magnitude in u − r, showing that galaxies were substantially bluer in the past even after all observational bias has been removed.
+The negative slope in the volume-limited fit indicates that, on average, galaxies at higher redshift are bluer than galaxies at lower redshift. Since u − r is a proxy for stellar population age and star formation activity, this means that galaxies were forming stars more actively in the past than they are today.
 
-Using standard cosmology, the redshift range z ≈ 0 to z ≈ 0.3 corresponds to several billion years of cosmic history. Over this time, the strong decrease in u − r implies a major decline in star formation activity as galaxies age. Because u − r traces the balance between young, blue stars and older, red stars, this evolution reflects galaxies gradually exhausting their cold gas and shutting down star formation.
+However, when the volume-limited sample is split into blue and red galaxies and each population is analyzed separately, neither population shows a statistically significant color–redshift slope within z ≤ 0.3. This shows that the strong global slope in the combined sample does not come from galaxies rapidly changing color within each population. Instead, it is driven mainly by a changing mixture of blue and red galaxies with redshift.
 
-The steep negative slope of the bias-corrected relation (**−3.11**) shows that this trend is not an artifact of telescope sensitivity but a real physical transformation of the galaxy population. In physical terms, galaxies evolve from blue, actively star-forming systems in the past toward red, passive systems in the present day, moving from the blue cloud onto the red sequence.
-
-This volume-limited result shows that the decline of cosmic star formation is encoded in the colors of galaxies themselves, making the measured color–redshift relation a quantitative record of how galaxies have aged over cosmic time.
+Physically, this implies that galaxy evolution over this redshift range is dominated by population transformation, with galaxies moving from the blue, star-forming population to the red, passive population as star formation shuts down, rather than by uniform aging within each group.
 
 ---
 
